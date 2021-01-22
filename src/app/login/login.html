@@ -1,0 +1,28 @@
+<div>
+  <h2>Login Here</h2>
+  <form>
+    <div>
+      <label>
+        Email
+        <input
+          type="email"
+          placeholder="Enter your email address"
+          name="email"
+          [(ngModel)]="emailID"
+        />
+      </label>
+      <label>
+        Password
+        <input
+          type="password"
+          placeholder="Enter your password"
+          name="pass"
+          [(ngModel)]="password"
+        />
+      </label>
+    </div>
+    <button (click)="onSubmit()">Submit</button>
+    <button (click)="onClear()">Clear</button>
+  </form>
+  <h3>You have entered Email: {{emailID}} and password as {{password}}</h3>
+</div>

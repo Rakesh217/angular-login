@@ -1,0 +1,11 @@
+<div>
+  {{ childServiceData }}
+  <div *ngFor="let result of results">
+    <app-profile-item
+      [ID]="result.id"
+      [body]="result.body"
+      [title]="result.title"
+      [userId]="result.userId"
+    ></app-profile-item>
+  </div>
+</div>
